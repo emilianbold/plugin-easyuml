@@ -24,11 +24,15 @@
         <!--Create/Update keystore-->
         <delete file="${keystore.location}${keystore.name}"/>
         <mkdir dir="${keystore.location}"/>
+<!--
         <genkey alias="${keystore.alias}" storepass="${keystore.password}"
                 dname="${keystore.dname}"
                 keystore="${keystore.location}${keystore.name}"/>
+-->
         <!--Update keystore info in projects-->
+<!--
         <antcall target="update-keystore-info"/>
+-->
     </target>
 
     <target name="update-keystore-info">
